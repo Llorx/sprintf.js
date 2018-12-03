@@ -214,18 +214,18 @@
      */
     /* eslint-disable quote-props */
     if (typeof exports !== 'undefined') {
-        exports['sprintf'] = sprintf
-        exports['vsprintf'] = vsprintf
+        exports['sprintn'] = sprintf
+        exports['vsprintn'] = vsprintf
     }
     if (typeof window !== 'undefined') {
-        window['sprintf'] = sprintf
-        window['vsprintf'] = vsprintf
+        window['sprintn'] = sprintf
+        window['vsprintn'] = vsprintf
 
         if (typeof define === 'function' && define['amd']) {
             define(function() {
                 return {
-                    'sprintf': sprintf,
-                    'vsprintf': vsprintf
+                    'sprintn': sprintf,
+                    'vsprintn': vsprintf
                 }
             })
         }
